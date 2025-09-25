@@ -2,8 +2,6 @@
 
 A modern, responsive todo application built with React and TypeScript. Manage your daily tasks with style and efficiency.
 
-![Todo App Preview](https://via.placeholder.com/800x400/1e40af/ffffff?text=Muzukuru+Todo+App)
-
 ## ✨ Features
 
 - ✅ **Add, edit, and delete tasks** - Complete task management
