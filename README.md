@@ -1,73 +1,108 @@
-# React + TypeScript + Vite
+# Muzukuru Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive todo application built with React and TypeScript. Manage your daily tasks with style and efficiency.
 
-Currently, two official plugins are available:
+![Todo App Preview](https://via.placeholder.com/800x400/1e40af/ffffff?text=Muzukuru+Todo+App)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- ✅ **Add, edit, and delete tasks** - Complete task management
+- 🎯 **Mark tasks as completed** - Track your progress
+- 📱 **Responsive design** - Works on desktop and mobile
+- 🌙 **Dark/Light mode** - Choose your preferred theme
+- 🎉 **Confetti celebrations** - Celebrate task completion
+- 💾 **Mock API integration** - Simulates real backend interactions
+- ⚡ **Loading states** - Smooth user experience with loading indicators
+- 🚨 **Error handling** - Graceful error management and retry functionality
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Shadcn/ui** - Beautiful, accessible UI components
+- **Lucide React** - Modern icon library
+- **Sonner** - Toast notifications
+- **React Confetti Boom** - Celebration animations
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/muzukuru-todo-app.git
+   cd muzukuru-todo-app
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🏃‍♂️ Running the Application
+
+### Development Server
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Build for Production
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
 ```
+
+### Preview Production Build
+
+```bash
+npm run preview
+# or
+yarn preview
+# or
+pnpm preview
+```
+
+## 🎯 Usage
+
+### Adding a Task
+1. Click the "Add Todo" button
+2. Enter a title and description
+3. Click "Add Todo" to save
+
+### Managing Tasks
+- **Complete a task**: Click the checkbox next to the task
+- **Edit a task**: Click the edit icon and modify the details
+- **Delete a task**: Click the delete icon
+
+### Theme Toggle
+Click the theme toggle button in the top right to switch between light and dark modes.
+
+## 🔧 Available Scripts
+
+| Script | Description |
+|--------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run lint:fix` | Fix ESLint issues |
+| `npm run type-check` | Run TypeScript compiler check |
+
+## 🎨 Customization
+
+### Themes
+The app supports light, dark, and system themes. Themes are managed using CSS variables and can be customized in `styles/globals.css`.
