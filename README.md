@@ -26,8 +26,9 @@ A modern, responsive todo application built with React and TypeScript. Manage yo
 ## 📦 Installation
 
 1. **Clone the repository:**
+
    ```bash
-   git clone https://github.com/your-username/muzukuru-todo-app.git
+   git clone https://github.com/CMShongera/Muzukuru-Todo.git
    cd muzukuru-todo-app
    ```
 
@@ -52,7 +53,7 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
 
 ### Build for Production
 
@@ -77,30 +78,34 @@ pnpm preview
 ## 🎯 Usage
 
 ### Adding a Task
+
 1. Click the "Add Todo" button
 2. Enter a title and description
 3. Click "Add Todo" to save
 
 ### Managing Tasks
+
 - **Complete a task**: Click the checkbox next to the task
 - **Edit a task**: Click the edit icon and modify the details
 - **Delete a task**: Click the delete icon
 
 ### Theme Toggle
+
 Click the theme toggle button in the top right to switch between light and dark modes.
 
 ## 🔧 Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run start` | Start production server |
-| `npm run lint` | Run ESLint |
-| `npm run lint:fix` | Fix ESLint issues |
+| Script               | Description                   |
+| -------------------- | ----------------------------- |
+| `npm run dev`        | Start development server      |
+| `npm run build`      | Build for production          |
+| `npm run start`      | Start production server       |
+| `npm run lint`       | Run ESLint                    |
+| `npm run lint:fix`   | Fix ESLint issues             |
 | `npm run type-check` | Run TypeScript compiler check |
 
 ## 🎨 Customization
 
 ### Themes
+
 The app supports light, dark, and system themes. Themes are managed using CSS variables and can be customized in `styles/globals.css`.
