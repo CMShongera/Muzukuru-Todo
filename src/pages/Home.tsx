@@ -125,8 +125,8 @@ function Home() {
                             <h2 className="text-2xl font-bold text-foreground mb-1">Done Tasks</h2>
                             <p className="text-muted-foreground max-w-md">Keeping track of your tasks from anywhere, at anytime.</p>
                         </div>
-                        <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
-                            <span className="text-2xl font-bold text-white">
+                        <div className="size-14 md:size-20 md:bg-primary rounded-full flex items-center justify-center">
+                            <span className="text-xl md:text-2xl  font-bold text-white">
                                 {completedCount}/{totalCount}
                             </span>
                         </div>
